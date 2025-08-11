@@ -1,0 +1,202 @@
+%------------------------
+% Resume Template
+% Author : Saiprasad Rao
+% Github : https://github.com/thesaiprasadrao
+% License : DSCE
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={black},
+    citecolor={blue!50!black},
+    urlcolor={black}
+}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+
+
+  \textbf{{\LARGE Saiprasad Rao}} & Email: \href{mailto:saiprasadrao1234@gmail.com}{saiprasadrao1234@gmail.com}\\
+  \underline{\href{https://leetcode.com/u/thesaiprasad/}{Leetcode}} & \underline{\href{https://www.linkedin.com/in/saiprasad-rao-947458212/}{LinkedIn}} \\
+  \underline{\href{https://github.com/thesaiprasadrao}{Github: thesaiprasadrao}} & Mobile:~~~+91-990-245-0514\\
+  \underline{\href{https://linktr.ee/saiprasadrao}{Linktree}}
+\end{tabular*}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Dayananda Sagar College Of Engineering}{CGPA: 7.5}
+        {Bachelor of Engineering - Computer Science And Business Systems}{2023 - 2027}
+      \vspace{-5pt}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-5pt}
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: C++, Java, Python, JavaScript, HTML, CSS, Shell Scripting}
+
+    \textbf{Technologies/Frameworks}{: React.js, face-api.js}
+
+    \textbf{AI/ML}{: Machine Learning (dataset preprocessing, model training), Computer Vision, }
+
+    \textbf{Databases/Storage}{: MySQL, MongoDB }
+
+    \textbf{DevOps/Deployment}{: Git, GitHub, Jenkins, Jupyter Notebook}
+
+    \textbf{Operating Systems/CLI}{: Linux (Void, Ubuntu), vi Editor, Unix Command-line Tools, Regular Expressions}
+    
+ \end{itemize}
+
+ \vspace{-10pt}
+
+
+%-----------PROJECTS-----------------
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubItem{\textbf{BlueMesh – Bluetooth Mesh Messaging App} $|$ \emph{Java, Android SDK, Bluetooth API}
+}{
+\begin{itemize}
+\item Developed an \textbf{offline peer-to-peer messaging application} where devices form a \textbf{mesh network} over Bluetooth to relay messages across multiple hops.
+\item Implemented \textbf{automatic device discovery}, connection management, and message routing without requiring internet access or continuous app activity.
+\item Designed a \textbf{robust message queue system} to ensure delivery reliability, even with intermittent connections.
+\item Created a lightweight, \textbf{battery-efficient communication protocol} optimized for short-range, low-latency messaging.
+\item Tested across multiple Android devices to validate \textbf{network range extension} through intermediate relay nodes.
+\item Targeted use cases include \textbf{disaster recovery, remote areas, and secure offline communication}.
+\end{itemize}
+}
+
+\resumeSubItem{\textbf{Jee Mains College Predictor} $|$ \emph{Python, Scikit-learn, Pandas, NumPy}
+}{
+\begin{itemize}
+\item Developed an \textbf{end-to-end machine learning system} to predict college admission cutoff ranks using \textbf{40,000+ historical admission records} from 2020–2024 across multiple NITs , IIIts and GFTIs.
+\item Implemented and compared multiple ML algorithms (\textbf{Random Forest, Gradient Boosting, Linear Regression, Ridge Regression}) with hyperparameter tuning and cross-validation to achieve optimal accuracy.
+\item Built a comprehensive \textbf{data processing pipeline} with categorical encoding, feature engineering, and validation for features including institute type, branch, category, quota, and gender preferences.
+\item Designed a \textbf{command-line interface} for personalized college recommendations with confidence intervals based on rank and preferences.
+\item Enabled \textbf{model persistence} using joblib for quick deployment without retraining.
+\end{itemize}
+}
+\vspace{-10pt}
+
+
+
+\resumeSubItem{\textbf{Face Detection Based Attendance System} $|$ \emph{JavaScript, face-api.js, HTML, CSS}
+}{
+\begin{itemize}
+\item Built a system to \textbf{capture a single classroom image}, detect and identify faces, and \textbf{automatically log attendance}.
+\item Leveraged \textbf{face-api.js} for facial detection and recognition on static images.
+\item Designed features for \textbf{grievance handling}, including \textbf{student-side functionality via Telegram bot} for re-evaluation requests.
+\item Integrated an \textbf{admin panel} for timetable management and student image uploads.
+\end{itemize}
+}
+\vspace{-10pt}
+
+\resumeSubItem{\textbf{OneVote – Real-Time Voting Platform} $|$ \emph{React.js, Node.js, Express, MongoDB, HTML, CSS, JavaScript}
+}{
+\begin{itemize}
+\item Designed and developed a secure, user-friendly \textbf{online voting platform} to facilitate \textbf{real-time polling and result tracking}.
+\item Implemented the \textbf{frontend} using \textbf{HTML, CSS, and JavaScript (React)} for intuitive, responsive, and accessible user interfaces.
+\item Built the \textbf{backend} with \textbf{Node.js and Express}, integrating \textbf{MongoDB} for efficient data storage and retrieval of votes and poll data.
+\item Incorporated \textbf{authentication and encryption protocols} to ensure vote integrity and user privacy.
+\item Developed additional features including \textbf{real-time vote updates} and \textbf{admin dashboards} for poll management.
+\end{itemize}
+}
+\vspace{-10pt}
+
+
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+
+\end{document}
