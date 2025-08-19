@@ -2,7 +2,7 @@
 % Resume Template
 % Author : Saiprasad Rao
 % Github : https://github.com/thesaiprasadrao
-% License : DSCE
+% License : MIT
 %------------------------
 
 \documentclass[a4paper,11pt]{article}
@@ -97,8 +97,6 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 
-%-----------------------------
-%%%%%%  CV STARTS HERE  %%%%%%
 
 \begin{document}
 
@@ -107,96 +105,86 @@
 
 
   \textbf{{\LARGE Saiprasad Rao}} & Email: \href{mailto:saiprasadrao1234@gmail.com}{saiprasadrao1234@gmail.com}\\
-  \underline{\href{https://leetcode.com/u/thesaiprasad/}{Leetcode}} & \underline{\href{https://www.linkedin.com/in/saiprasad-rao-947458212/}{LinkedIn}} \\
-  \underline{\href{https://github.com/thesaiprasadrao}{Github: thesaiprasadrao}} & Mobile:~~~+91-990-245-0514\\
+  \underline{\href{https://leetcode.com/u/thesaiprasad/}{Leetcode: thesaiprasad}} & \underline{\href{https://www.linkedin.com/in/saiprasad-rao-947458212/}{LinkedIn}} \\
+  \underline{\href{https://github.com/thesaiprasadrao}{Github: thesaiprasadrao}} & Mobile:~~~+91-9902450514\\
   \underline{\href{https://linktr.ee/saiprasadrao}{Linktree}}
 \end{tabular*}
 
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-        {Dayananda Sagar College Of Engineering}{CGPA: 7.5}
+        {Dayananda Sagar College Of Engineering}{CGPA: 7.2}
         {Bachelor of Engineering - Computer Science And Business Systems}{2023 - 2027}
       \vspace{-5pt}
     \resumeSubHeadingListEnd
 	    
 \vspace{-5pt}
-\section{Technical Skills}
+\section{Technical Skills And Interests}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-    \textbf{Languages}{: C++, Java, Python, JavaScript, HTML, CSS, Shell Scripting}
-
-    \textbf{Technologies/Frameworks}{: React.js, face-api.js}
-
-    \textbf{AI/ML}{: Machine Learning (dataset preprocessing, model training), Computer Vision, }
-
-    \textbf{Databases/Storage}{: MySQL, MongoDB }
-
-    \textbf{DevOps/Deployment}{: Git, GitHub, Jenkins, Jupyter Notebook}
-
-    \textbf{Operating Systems/CLI}{: Linux (Void, Ubuntu), vi Editor, Unix Command-line Tools, Regular Expressions}
-    
+    \textbf{Languages:} C++(Proficient) , Java , Python , TypeScript \\
+    \textbf{Frameworks:} React.js \\
+    \textbf{Databases:} MySQL , MongoDB \\
+    \textbf{DevOps:} Git , GitHub \\
+    \textbf{Relevant Coursework: } Data Structures & Algorithms, Operating Systems, Object Oriented Programming, Database
+Management System, Software Engineering.
  \end{itemize}
 
  \vspace{-10pt}
 
-
 %-----------PROJECTS-----------------
-
 \section{Projects}
 \resumeSubHeadingListStart
 
-\resumeSubItem{\textbf{BlueMesh – Bluetooth Mesh Messaging App} $|$ \emph{Java, Android SDK, Bluetooth API}
-}{
-\begin{itemize}
-\item Developed an \textbf{offline peer-to-peer messaging application} where devices form a \textbf{mesh network} over Bluetooth to relay messages across multiple hops.
-\item Implemented \textbf{automatic device discovery}, connection management, and message routing without requiring internet access or continuous app activity.
-\item Designed a \textbf{robust message queue system} to ensure delivery reliability, even with intermittent connections.
-\item Created a lightweight, \textbf{battery-efficient communication protocol} optimized for short-range, low-latency messaging.
-\item Tested across multiple Android devices to validate \textbf{network range extension} through intermediate relay nodes.
-\item Targeted use cases include \textbf{disaster recovery, remote areas, and secure offline communication}.
-\end{itemize}
-}
+\resumeProjectHeading{\textbf{BlueMesh - Bluetooth-based Peer-to-Peer Messaging App} $|$ \emph{Node.js, Web Bluetooth API, LocalStorage}}{}
+\resumeItemListStart
+  \resumeItem{Developed a \textbf{browser-based chat app} that connects devices directly over \textbf{Bluetooth}, eliminating the need for internet or mobile data.}
+  \resumeItem{Implemented \textbf{multi-hop message relaying}, allowing messages to travel across intermediate devices and effectively extending range.}
+  \resumeItem{Designed the system to be \textbf{offline-first}, ensuring 100\% local storage of messages and files with seamless reconnection after disconnections.}
+  \resumeItem{Packaged and tested the app on Android using \textbf{Node.js + Termux}, enabling deployment without external servers or infrastructure.}
+\resumeItemListEnd
+\vspace{-16pt}
 
-\resumeSubItem{\textbf{Jee Mains College Predictor} $|$ \emph{Python, Scikit-learn, Pandas, NumPy}
-}{
-\begin{itemize}
-\item Developed an \textbf{end-to-end machine learning system} to predict college admission cutoff ranks using \textbf{40,000+ historical admission records} from 2020–2024 across multiple NITs , IIIts and GFTIs.
-\item Implemented and compared multiple ML algorithms (\textbf{Random Forest, Gradient Boosting, Linear Regression, Ridge Regression}) with hyperparameter tuning and cross-validation to achieve optimal accuracy.
-\item Built a comprehensive \textbf{data processing pipeline} with categorical encoding, feature engineering, and validation for features including institute type, branch, category, quota, and gender preferences.
-\item Designed a \textbf{command-line interface} for personalized college recommendations with confidence intervals based on rank and preferences.
-\item Enabled \textbf{model persistence} using joblib for quick deployment without retraining.
-\end{itemize}
-}
-\vspace{-10pt}
+\resumeProjectHeading{\textbf{JEE Mains College Predictor} $|$ \emph{Python, Scikit-learn, Pandas, NumPy}}{}
+\resumeItemListStart
+  \resumeItem{Built an \textbf{ML-based cutoff prediction tool} trained on \textbf{2,00,000+ admission records} (2020–2024) from NITs, IIITs, and GFTIs.}
+  \resumeItem{Benchmarked \textbf{Random Forest, Gradient Boosting, and Ridge Regression}, improving prediction accuracy by \textbf{~12\%} through hyperparameter tuning.}
+  \resumeItem{Engineered features (branch, category, quota, gender) and applied \textbf{categorical encoding} to improve model generalization on unseen ranks.}
+  \resumeItem{Created a \textbf{CLI interface} that provides college recommendations within seconds, with confidence intervals for rank predictions.}
+  \resumeItem{Optimized workflow by saving trained models with \textbf{joblib}, reducing inference latency by \textbf{80\%} without retraining.}
+\resumeItemListEnd
+\vspace{-26pt}
 
+\resumeProjectHeading{\textbf{OneVote – Real-Time Voting Platform} $|$ \emph{React.js, Node.js, Express, MongoDB}}{}
+\resumeItemListStart
+  \resumeItem{Developed a secure \textbf{web-based polling app} that supported \textbf{100+ concurrent users} with real-time vote updates.}
+  \resumeItem{Built a responsive \textbf{React.js frontend} for smooth user experience across mobile and desktop devices.}
+  \resumeItem{Designed a scalable \textbf{Node.js + Express backend} with \textbf{MongoDB}, handling creation and storage of 1,000+ polls.}
+  \resumeItem{Integrated \textbf{authentication and encryption}, ensuring vote integrity and protecting user identities.}
+  \resumeItem{Shipped an \textbf{admin dashboard} for managing polls and monitoring live results with low latency.}
+\resumeItemListEnd
+\vspace{-16pt}
 
-
-\resumeSubItem{\textbf{Face Detection Based Attendance System} $|$ \emph{JavaScript, face-api.js, HTML, CSS}
-}{
-\begin{itemize}
-\item Built a system to \textbf{capture a single classroom image}, detect and identify faces, and \textbf{automatically log attendance}.
-\item Leveraged \textbf{face-api.js} for facial detection and recognition on static images.
-\item Designed features for \textbf{grievance handling}, including \textbf{student-side functionality via Telegram bot} for re-evaluation requests.
-\item Integrated an \textbf{admin panel} for timetable management and student image uploads.
-\end{itemize}
-}
-\vspace{-10pt}
-
-\resumeSubItem{\textbf{OneVote – Real-Time Voting Platform} $|$ \emph{React.js, Node.js, Express, MongoDB, HTML, CSS, JavaScript}
-}{
-\begin{itemize}
-\item Designed and developed a secure, user-friendly \textbf{online voting platform} to facilitate \textbf{real-time polling and result tracking}.
-\item Implemented the \textbf{frontend} using \textbf{HTML, CSS, and JavaScript (React)} for intuitive, responsive, and accessible user interfaces.
-\item Built the \textbf{backend} with \textbf{Node.js and Express}, integrating \textbf{MongoDB} for efficient data storage and retrieval of votes and poll data.
-\item Incorporated \textbf{authentication and encryption protocols} to ensure vote integrity and user privacy.
-\item Developed additional features including \textbf{real-time vote updates} and \textbf{admin dashboards} for poll management.
-\end{itemize}
-}
-\vspace{-10pt}
-
+\resumeProjectHeading{\textbf{Mood Diary – Client-Side Emotion \& Reflection Tracker} $|$ \emph{HTML, CSS, Vanilla JS}}{}
+\resumeItemListStart
+  \resumeItem{Created a lightweight journaling app where all data is stored locally, ensuring \textbf{100\% user privacy with zero backend}.}
+  \resumeItem{Designed an interactive journaling flow with contextual prompts, animated feedback, and deterministic daily quotes.}
+  \resumeItem{Added built-in analytics, including a \textbf{mood distribution chart} and smart date labels (e.g., Today/Yesterday).}
+  \resumeItem{Enhanced UX with toast notifications, CSS animations, and microinteractions, resulting in \textbf{smooth sub-100ms responses}.}
+\resumeItemListEnd
 
 \resumeSubHeadingListEnd
-\vspace{-10pt}
+ \vspace{-10pt}
 
+
+
+%-----------ACHIEVEMENTS-----------------
+
+\section{Achievements}
+\resumeItemListStart
+  \resumeItem{CodeChef: \textbf{1-star rating}, peak rating \textbf{1400}}
+  \resumeItem{LeetCode: Solved \textbf{80+ problems}}
+  \resumeItem{Regular participant in online coding contests}
+\resumeItemListEnd
+\end{itemize}
 \end{document}
