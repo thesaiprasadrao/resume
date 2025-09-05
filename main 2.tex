@@ -1,0 +1,184 @@
+%------------------------
+% Resume Template
+% Author : Saiprasad Rao
+% Github : https://github.com/thesaiprasadrao
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={black},
+    citecolor={blue!50!black},
+    urlcolor={black}
+}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Saiprasad Rao}} & Email: \href{mailto:saiprasadrao1234@gmail.com}{saiprasadrao1234@gmail.com}\\
+  \underline{\href{https://leetcode.com/u/thesaiprasad/}{Leetcode: thesaiprasad}} & \underline{\href{https://www.linkedin.com/in/saiprasad-rao-947458212/}{LinkedIn}} \\
+  \underline{\href{https://github.com/thesaiprasadrao}{Github: thesaiprasadrao}} & Mobile:~~~+91-9902450514\\
+  \underline{\href{https://linktr.ee/saiprasadrao}{Linktree}}
+\end{tabular*}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Dayananda Sagar College Of Engineering}{CGPA: 7.2}
+        {Bachelor of Engineering - Computer Science And Business Systems}{2023 - 2027}
+      \vspace{-5pt}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-5pt}
+\section{Technical Skills And Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    {\small \item
+    \textbf{Languages:} C++(Proficient) , Java , Python , TypeScript \\
+    \textbf{Frameworks:} React.js \\
+    \textbf{Databases:} MySQL , MongoDB \\
+    \textbf{DevOps:} Git , GitHub \\
+    \textbf{Relevant Coursework: } Data Structures \& Algorithms, Operating Systems, Object Oriented Programming, Database Management System, Software Engineering, Computer Networks.\\
+    \textbf{APIs:} RESTful APIs, JSON handling 
+
+ \end{itemize}
+
+ \vspace{-10pt}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading{\textbf{BlueMesh - Bluetooth-based Peer-to-Peer Messaging App} $|$ \emph{Node.js, Web Bluetooth API, LocalStorage}}{}
+\resumeItemListStart
+  \resumeItem{Built a \textbf{browser-based chat app} that connects devices directly over \textbf{Bluetooth}, eliminating the need for internet or mobile data.}
+  \resumeItem{Implemented \textbf{multi-hop message relaying}, allowing messages to travel across intermediate devices and effectively extending range.}
+  \resumeItem{Designed the system to be \textbf{offline-first}, ensuring 100\% local storage of messages and files with automatic reconnection after disconnections.}
+  \resumeItem{Packaged and tested the app on Android using \textbf{Node.js + Termux}, enabling deployment without external servers or infrastructure.}
+\resumeItemListEnd
+\vspace{-16pt}
+
+\resumeProjectHeading{\textbf{JEE Mains College Predictor} $|$ \emph{Python, Scikit-learn, Pandas, NumPy}}{}
+\resumeItemListStart
+  \resumeItem{Built an \textbf{ML-based cutoff prediction tool} trained on \textbf{2,00,000+ cut-off records} (2020–2024) from NITs, IIITs, and GFTIs.}
+  \resumeItem{Compared \textbf{Random Forest, Gradient Boosting, and Ridge Regression}, improving prediction accuracy by \textbf{12\%} through hyperparameter tuning.}
+  \resumeItem{Created features (branch, category, quota, gender) and applied \textbf{categorical encoding} to improve model generalization on unseen ranks.}
+  \resumeItem{Created a \textbf{CLI interface} that provides college recommendations within seconds, with confidence intervals for rank predictions.}
+  \resumeItem{Optimized workflow by saving trained models with \textbf{joblib}, reducing inference latency by \textbf{80\%} without retraining.}
+\resumeItemListEnd
+\vspace{-26pt}
+
+\resumeProjectHeading{\textbf{OneVote – Real-Time Voting Platform} $|$ \emph{React.js, Node.js, Express, MongoDB}}{}
+\resumeItemListStart
+  \resumeItem{Developed a secure \textbf{web-based polling app} that supported \textbf{100+ concurrent users} with real-time vote updates.}
+  \resumeItem{Built a \textbf{responsive frontend} that works well on both mobile and desktop devices.}
+  \resumeItem{Designed a scalable \textbf{Node.js + Express backend} with \textbf{MongoDB}, handling creation and storage of 1,000+ polls.}
+  \resumeItem{Integrated \textbf{authentication and encryption}, ensuring vote integrity and protecting user identities.}
+  \resumeItem{Shipped an \textbf{admin dashboard} for managing polls and monitoring live results with low latency.}
+\resumeItemListEnd
+\vspace{-16pt}
+
+\resumeProjectHeading{\textbf{Mood Diary – Privacy-First Journal App} $|$ \emph{HTML, CSS, Vanilla JavaScript}}{}
+\resumeItemListStart
+  \resumeItem{Developed a client-side journaling app with \textbf{100\% local storage} – no data ever leaves the user's device.}
+  \resumeItem{Created interactive journaling interface with contextual writing prompts and animated visual feedback.}
+  \resumeItem{Added mood tracking analytics with distribution charts and smart date formatting (Today/Yesterday/specific dates).}
+  \resumeItem{Optimized with CSS animations and micro-interactions for \textbf{sub-100ms response times} and smooth user experience.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+ \vspace{-10pt}
+
+%-----------ACHIEVEMENTS-----------------
+\section{Coding \& Achievements}
+\resumeItemListStart
+  \resumeItem{\textbf{CodeChef:} 1-star rating with peak rating of 1400}
+  \resumeItem{\textbf{LeetCode:} Solved 100+ algorithmic problems across various difficulty levels}
+  \resumeItem{\textbf{Competitive Programming:} Active participant in online coding contests}
+\resumeItemListEnd
+
+\end{document}
